@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
           {testimonials.map((item) => (
             <article
               key={item.name}
-              className="flex h-full flex-col rounded-2xl border border-slate-100 bg-slate-50 p-6"
+              className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
             >
               <p className="text-sm text-slate-600">"{item.feedback}"</p>
               <div className="mt-6 flex items-center gap-4">

@@ -16,7 +16,7 @@ export default function SectionHeading({
   return (
     <div className={`flex flex-col ${alignment} gap-3`}>
       {eyebrow ? (
-        <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent-600">
+        <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary-600">
           {eyebrow}
         </span>
       ) : null}

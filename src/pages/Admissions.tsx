@@ -67,27 +67,27 @@ export default function Admissions() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-1">First Name</label>
-                      <input type="text" id="firstName" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:border-accent-500 focus:ring-accent-500 outline-none transition-all" />
+                      <input type="text" id="firstName" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-200" />
                     </div>
                     <div>
                       <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-1">Last Name</label>
-                      <input type="text" id="lastName" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:border-accent-500 focus:ring-accent-500 outline-none transition-all" />
+                      <input type="text" id="lastName" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-200" />
                     </div>
                   </div>
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
-                    <input type="email" id="email" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:border-accent-500 focus:ring-accent-500 outline-none transition-all" />
+                    <input type="email" id="email" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-200" />
                   </div>
 
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
-                    <input type="tel" id="phone" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:border-accent-500 focus:ring-accent-500 outline-none transition-all" />
+                    <input type="tel" id="phone" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-200" />
                   </div>
 
                   <div>
                     <label htmlFor="course" className="block text-sm font-medium text-slate-700 mb-1">Interested Course</label>
-                    <select id="course" required className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:border-accent-500 focus:ring-accent-500 outline-none transition-all bg-white">
+                    <select id="course" required className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-200">
                       <option value="">Select a course</option>
                       <option value="bpharm">B. Pharmacy</option>
                       <option value="mpharm">M. Pharmacy</option>
@@ -95,7 +95,7 @@ export default function Admissions() {
                     </select>
                   </div>
 
-                  <button type="submit" className="w-full rounded-lg bg-primary-900 px-4 py-3.5 text-sm font-bold text-white shadow-md hover:bg-primary-800 transition-all">
+                  <button type="submit" className="w-full rounded-lg bg-primary-600 px-4 py-3.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-primary-700">
                     Submit Enquiry
                   </button>
                 </form>

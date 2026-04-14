@@ -12,7 +12,7 @@ export default function Contact() {
         />
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl border border-slate-100 bg-slate-50 p-8">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
             <h3 className="text-lg font-semibold text-primary-900">Send us a message</h3>
             <form className="mt-6 space-y-4">
               <div>
@@ -23,7 +23,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
-                  className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-accent-500 focus:ring-1 focus:ring-accent-500"
+                  className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
                 />
               </div>
               <div>
@@ -35,7 +35,7 @@ export default function Contact() {
                   name="email"
                   type="email"
                   required
-                  className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-accent-500 focus:ring-1 focus:ring-accent-500"
+                  className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
                 />
               </div>
               <div>
@@ -47,12 +47,12 @@ export default function Contact() {
                   name="message"
                   rows={5}
                   required
-                  className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-accent-500 focus:ring-1 focus:ring-accent-500"
+                  className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full rounded-lg bg-primary-900 px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-800"
+                className="w-full rounded-lg bg-primary-600 px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700"
               >
                 Submit message
               </button>

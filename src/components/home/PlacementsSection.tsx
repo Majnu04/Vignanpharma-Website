@@ -33,7 +33,7 @@ export default function PlacementsSection() {
             {placementStats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl border border-slate-100 bg-slate-50 p-6"
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
               >
                 <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
                   {stat.label}
@@ -43,7 +43,7 @@ export default function PlacementsSection() {
             ))}
           </div>
 
-          <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-wider text-slate-500">
               Recruiters
             </p>
@@ -51,7 +51,7 @@ export default function PlacementsSection() {
               {recruiters.map((brand) => (
                 <div
                   key={brand.name}
-                  className="flex items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-4 shadow-sm"
+                  className="flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50 px-3 py-4"
                 >
                   <img
                     src={brand.logo}
