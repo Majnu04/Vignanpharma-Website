@@ -38,9 +38,9 @@ export default function TestimonialsSection() {
           {testimonials.map((item) => (
             <article
               key={item.name}
-              className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+              className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-lg"
             >
-              <p className="text-sm text-slate-600">"{item.feedback}"</p>
+              <p className="text-sm leading-relaxed text-slate-600">"{item.feedback}"</p>
               <div className="mt-6 flex items-center gap-4">
                 <img
                   src={item.image}

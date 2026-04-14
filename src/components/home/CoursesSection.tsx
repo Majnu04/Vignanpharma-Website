@@ -37,16 +37,16 @@ export default function CoursesSection() {
           {courses.map((course) => (
             <article
               key={course.title}
-              className="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-xl"
             >
-              <div className="mb-4 inline-flex w-fit items-center rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-700">
+              <div className="mb-4 inline-flex w-fit items-center rounded-full bg-primary-100 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-primary-700">
                 {course.duration}
               </div>
               <h3 className="text-2xl font-semibold text-primary-900">{course.title}</h3>
-              <p className="mt-3 flex-grow text-sm text-slate-600">{course.description}</p>
+              <p className="mt-3 flex-grow text-sm leading-relaxed text-slate-600">{course.description}</p>
               <Link
                 to="/courses"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent-600 transition-colors group-hover:text-accent-700"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-700 transition-all duration-200 group-hover:text-primary-900"
               >
                 Explore course details
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

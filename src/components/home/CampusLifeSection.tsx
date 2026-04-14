@@ -37,15 +37,15 @@ export default function CampusLifeSection() {
           {gallery.map((item) => (
             <div
               key={item.title}
-              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-lg"
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               />
               <div className="border-t border-slate-200 px-5 py-4">
-                <p className="text-base font-semibold text-slate-800">{item.title}</p>
+                <p className="text-base font-semibold text-slate-900">{item.title}</p>
               </div>
             </div>
           ))}

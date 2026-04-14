@@ -40,13 +40,13 @@ export default function HighlightsSection() {
             return (
               <div
                 key={item.title}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-lg"
               >
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary-600">
                   <Icon className="h-6 w-6" />
                 </div>
                 <h3 className="mb-2 text-lg font-semibold text-primary-900">{item.title}</h3>
-                <p className="text-sm text-slate-600">{item.description}</p>
+                <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
               </div>
             );
           })}

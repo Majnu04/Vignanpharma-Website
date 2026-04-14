@@ -54,14 +54,14 @@ export default function NewsSection() {
           {newsItems.map((item) => (
             <article
               key={item.title}
-              className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+              className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-lg"
             >
               <p className="text-xs font-semibold uppercase tracking-wider text-primary-600">
                 {item.date}
               </p>
               <h3 className="mt-3 text-lg font-semibold text-primary-900">{item.title}</h3>
-              <p className="mt-3 flex-grow text-sm text-slate-600">{item.description}</p>
-              <button className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-700 transition-colors group-hover:text-primary-900">
+              <p className="mt-3 flex-grow text-sm leading-relaxed text-slate-600">{item.description}</p>
+              <button className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-700 transition-all duration-200 group-hover:text-primary-900">
                 Read full story
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </button>
