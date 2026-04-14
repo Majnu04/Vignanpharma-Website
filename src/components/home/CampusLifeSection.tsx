@@ -4,22 +4,22 @@ const gallery = [
   {
     title: 'Advanced Labs',
     image:
-      'https://images.unsplash.com/photo-1581092160607-ee22731c7a4f?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200&auto=format&fit=crop',
   },
   {
     title: 'Library & Research',
     image:
-      'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1457694587812-e8bf29a43845?q=80&w=1200&auto=format&fit=crop',
   },
   {
     title: 'Clinical Practice',
     image:
-      'https://images.unsplash.com/photo-1580281657521-0da2ab61d7a0?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=1200&auto=format&fit=crop',
   },
   {
     title: 'Student Activities',
     image:
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop',
   },
 ];
 
