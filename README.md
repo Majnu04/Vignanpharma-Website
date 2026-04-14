@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Vignan Pharma
 
-# Run and deploy your AI Studio app
+## Overview
+Vignan Pharma is a pharmaceutical company focused on developing and delivering quality medicines and healthcare solutions.
 
-This contains everything you need to run your app locally.
+## Mission
+To provide affordable, effective pharmaceutical products to improve patient health and wellness.
 
-View your app in AI Studio: https://ai.studio/apps/1d0c9da6-94f3-42e0-b66d-51ebf549f6cf
+## Key Areas
+- Drug development
+- Healthcare products
+- Quality assurance
+- Customer care
 
-## Run Locally
+## Contact
+For more information, visit our official website or contact our support team.
 
-**Prerequisites:**  Node.js
+---
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+*Add your company-specific details as needed.*
