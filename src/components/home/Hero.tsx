@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <section className="bg-slate-50/70 pt-16 pb-16 sm:pt-20 sm:pb-20 lg:pt-28 lg:pb-28">
+    <section className="bg-slate-50/70 pt-0 pb-16 sm:pt-0 sm:pb-20 lg:pt-0 lg:pb-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="max-w-2xl">
-            <div className="mb-6 inline-flex items-center rounded-full border border-primary-200 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary-700 shadow-sm">
+            <div className="mt-3 mb-6 inline-flex items-center rounded-full border border-primary-200 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary-700 shadow-sm">
               Admissions Open for 2026-27
             </div>
             <h1 className="font-heading text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -54,7 +54,7 @@ export default function Hero() {
               <div className="relative w-full pt-[56.25%]">
                 <iframe
                   className="absolute inset-0 h-full w-full"
-                  src="https://www.youtube.com/embed/BnT-BjwymcE"
+                  src="https://www.youtube.com/embed/BnT-BjwymcE?autoplay=1&mute=1&loop=1&playlist=BnT-BjwymcE&controls=0&playsinline=1"
                   title="Vignan Institute of Pharmaceutical Technology"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

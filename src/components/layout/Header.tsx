@@ -148,7 +148,7 @@ export default function Header() {
         {/* Logo Area */}
         <Link to="/" className="flex items-center gap-4">
           <img
-            src="/src/Public/Logo.jpg"
+            src="/output-onlinepngtools.png"
             alt="Vignan Institute of Pharmaceutical Technology"
             className="h-14 w-auto sm:h-16"
           />
@@ -160,8 +160,8 @@ export default function Header() {
             <div key={link.name} className="relative group">
               <Link
                 to={link.path}
-                className={`text-sm font-semibold transition-colors hover:text-accent-600 ${
-                  isLinkActive(link.path, link.children) ? 'text-accent-600' : 'text-slate-700'
+                className={`text-sm font-semibold transition-colors hover:text-primary-700 ${
+                  isLinkActive(link.path, link.children) ? 'text-primary-700' : 'text-slate-700'
                 }`}
               >
                 {link.name}
@@ -173,7 +173,7 @@ export default function Header() {
                       <Link
                         key={child.name}
                         to={child.path}
-                        className="rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-accent-600"
+                        className="rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-primary-700"
                       >
                         {child.name}
                       </Link>
@@ -184,16 +184,6 @@ export default function Header() {
             </div>
           ))}
         </nav>
-
-        {/* CTA Button */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link
-            to="/admissions"
-            className="rounded-full bg-secondary-500 px-6 py-2.5 text-sm font-bold text-primary-900 shadow-sm transition-all hover:-translate-y-0.5 hover:bg-secondary-600 hover:shadow-md"
-          >
-            Apply Now
-          </Link>
-        </div>
 
         {/* Mobile Menu Button */}
         <button 
@@ -213,7 +203,7 @@ export default function Header() {
                 <Link
                   to={link.path}
                   className={`text-base font-semibold ${
-                    isLinkActive(link.path, link.children) ? 'text-accent-600' : 'text-slate-700'
+                    isLinkActive(link.path, link.children) ? 'text-primary-700' : 'text-slate-700'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -225,7 +215,7 @@ export default function Header() {
                       <Link
                         key={child.name}
                         to={child.path}
-                        className="text-sm font-semibold text-slate-600 transition-colors hover:text-accent-600"
+                        className="text-sm font-semibold text-slate-600 transition-colors hover:text-primary-700"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {child.name}

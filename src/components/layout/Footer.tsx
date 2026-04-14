@@ -6,11 +6,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="col-span-1 md:col-span-2">
-            <div className="mb-4 flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600 text-lg font-bold text-white">
-                V
-              </div>
-              <span className="text-xl font-bold text-slate-900">VIPT</span>
+            <div className="mb-4 flex items-center gap-3">
+              <img
+                src="/output-onlinepngtools.png"
+                alt="Vignan Institute of Pharmaceutical Technology"
+                className="h-12 w-auto sm:h-14"
+              />
+              <span className="text-xl font-bold text-slate-900"></span>
             </div>
             <p className="max-w-md text-sm text-slate-500">
               Vignan Institute of Pharmaceutical Technology is committed to providing quality education with global standards and Indian values.
