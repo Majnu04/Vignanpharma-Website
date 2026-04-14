@@ -42,3 +42,30 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer base {
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  img,
+  [role='button'] {
+    transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease,
+      box-shadow 200ms ease, transform 200ms ease, opacity 200ms ease;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 700ms ease, transform 700ms ease;
+    will-change: opacity, transform;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

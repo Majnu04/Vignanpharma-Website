@@ -1,4 +1,5 @@
 import SectionHeading from '../ui/SectionHeading';
+import Reveal from '../ui/Reveal';
 
 const testimonials = [
   {
@@ -28,33 +29,37 @@ export default function TestimonialsSection() {
   return (
     <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="Testimonials"
-          title="Student stories that inspire"
-          description="Hear from students who are building impactful careers in pharmacy and healthcare."
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="Testimonials"
+            title="Student stories that inspire"
+            description="Hear from students who are building impactful careers in pharmacy and healthcare."
+          />
+        </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((item) => (
-            <article
-              key={item.name}
-              className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-lg"
-            >
-              <p className="text-sm leading-relaxed text-slate-600">"{item.feedback}"</p>
-              <div className="mt-6 flex items-center gap-4">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="h-12 w-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="text-sm font-semibold text-primary-900">{item.name}</p>
-                  <p className="text-xs text-slate-500">{item.course}</p>
+        <Reveal delayMs={120}>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((item) => (
+              <article
+                key={item.name}
+                className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-lg"
+              >
+                <p className="text-sm leading-relaxed text-slate-600">"{item.feedback}"</p>
+                <div className="mt-6 flex items-center gap-4">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="h-12 w-12 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-sm font-semibold text-primary-900">{item.name}</p>
+                    <p className="text-xs text-slate-500">{item.course}</p>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
-        </div>
+              </article>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

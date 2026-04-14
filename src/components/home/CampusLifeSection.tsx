@@ -1,4 +1,5 @@
 import SectionHeading from '../ui/SectionHeading';
+import Reveal from '../ui/Reveal';
 
 const gallery = [
   {
@@ -27,29 +28,33 @@ export default function CampusLifeSection() {
   return (
     <section className="bg-slate-50 py-16 sm:py-24">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="Campus Life"
-          title="A vibrant campus experience"
-          description="From world-class labs to dynamic student clubs, every space is designed to inspire learning."
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="Campus Life"
+            title="A vibrant campus experience"
+            description="From world-class labs to dynamic student clubs, every space is designed to inspire learning."
+          />
+        </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {gallery.map((item) => (
-            <div
-              key={item.title}
-              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-lg"
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-              />
-              <div className="border-t border-slate-200 px-5 py-4">
-                <p className="text-base font-semibold text-slate-900">{item.title}</p>
+        <Reveal delayMs={120}>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {gallery.map((item) => (
+              <div
+                key={item.title}
+                className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-100 hover:shadow-lg"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                />
+                <div className="border-t border-slate-200 px-5 py-4">
+                  <p className="text-base font-semibold text-slate-900">{item.title}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,12 +1,14 @@
 import { ArrowRight, Award, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Reveal from '../ui/Reveal';
 
 export default function Hero() {
   return (
     <section className="bg-slate-50/70 pt-0 pb-16 sm:pb-20 lg:pb-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="max-w-2xl">
+        <Reveal>
+          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+            <div className="max-w-2xl">
             <div className="mt-4 inline-flex items-center rounded-full border border-primary-200/70 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-primary-700 shadow-sm">
               Admissions Open for 2026-27
             </div>
@@ -49,7 +51,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative">
+            <div className="relative">
             <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
               <div className="relative w-full pt-[56.25%]">
                 <iframe
@@ -71,8 +73,9 @@ export default function Hero() {
                 <p className="mt-2 text-base font-semibold text-slate-700">Pfizer, Dr. Reddy's, Divis</p>
               </div>
             </div>
+            </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

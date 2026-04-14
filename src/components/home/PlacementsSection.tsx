@@ -1,4 +1,5 @@
 import SectionHeading from '../ui/SectionHeading';
+import Reveal from '../ui/Reveal';
 
 const placementStats = [
   { label: 'Highest Package', value: '8.5 LPA' },
@@ -22,48 +23,52 @@ export default function PlacementsSection() {
   return (
     <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="Placements"
-          title="Career outcomes that stand out"
-          description="Dedicated training and placement support with strong ties to pharma, healthcare, and research organizations."
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="Placements"
+            title="Career outcomes that stand out"
+            description="Dedicated training and placement support with strong ties to pharma, healthcare, and research organizations."
+          />
+        </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div className="grid grid-cols-2 gap-4">
-            {placementStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary-100 hover:shadow-md"
-              >
-                <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                  {stat.label}
-                </p>
-                <p className="mt-3 text-3xl font-bold text-primary-900">{stat.value}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-wider text-slate-500">
-              Recruiters
-            </p>
-            <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
-              {recruiters.map((brand) => (
+        <Reveal delayMs={120}>
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <div className="grid grid-cols-2 gap-4">
+              {placementStats.map((stat) => (
                 <div
-                  key={brand.name}
-                  className="flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50 px-3 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary-100 hover:bg-white hover:shadow-md"
+                  key={stat.label}
+                  className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary-100 hover:shadow-md"
                 >
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="h-8 w-auto object-contain"
-                    loading="lazy"
-                  />
+                  <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+                    {stat.label}
+                  </p>
+                  <p className="mt-3 text-3xl font-bold text-primary-900">{stat.value}</p>
                 </div>
               ))}
             </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-wider text-slate-500">
+                Recruiters
+              </p>
+              <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+                {recruiters.map((brand) => (
+                  <div
+                    key={brand.name}
+                    className="flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50 px-3 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary-100 hover:bg-white hover:shadow-md"
+                  >
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="h-8 w-auto object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
