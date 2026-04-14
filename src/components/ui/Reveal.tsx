@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 
 interface RevealProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   delayMs?: number;
 }

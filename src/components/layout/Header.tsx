@@ -144,13 +144,13 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
         {/* Logo Area */}
         <Link to="/" className="flex items-center gap-4">
           <img
             src="/output-onlinepngtools.png"
             alt="Vignan Institute of Pharmaceutical Technology"
-            className="h-14 w-auto sm:h-16"
+            className="h-10 w-auto sm:h-16"
           />
         </Link>
 
@@ -187,7 +187,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden p-2 text-slate-600 hover:text-primary-900 transition-colors"
+          className="md:hidden rounded-lg p-2 text-slate-600 transition-colors hover:text-primary-900"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -196,13 +196,13 @@ export default function Header() {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-slate-100 bg-white px-4 py-4 shadow-lg absolute w-full">
-          <nav className="flex flex-col space-y-4">
+        <div className="md:hidden absolute left-0 right-0 z-40 border-t border-slate-100 bg-white/95 px-4 py-4 shadow-lg backdrop-blur">
+          <nav className="flex max-h-[calc(100vh-4rem)] flex-col space-y-3 overflow-y-auto pb-6">
             {navLinks.map((link) => (
               <div key={link.name} className="flex flex-col gap-2">
                 <Link
                   to={link.path}
-                  className={`text-base font-semibold ${
+                  className={`rounded-lg px-2 py-2 text-base font-semibold ${
                     isLinkActive(link.path, link.children) ? 'text-primary-700' : 'text-slate-700'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -215,7 +215,7 @@ export default function Header() {
                       <Link
                         key={child.name}
                         to={child.path}
-                        className="text-sm font-semibold text-slate-600 transition-colors hover:text-primary-700"
+                        className="rounded-md px-2 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:text-primary-700"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {child.name}
@@ -225,15 +225,6 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-4 border-t border-slate-100">
-              <Link 
-                to="/admissions" 
-                className="flex w-full justify-center rounded-lg bg-secondary-500 px-4 py-3 text-sm font-bold text-primary-900 shadow-sm"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Apply Now
-              </Link>
-            </div>
           </nav>
         </div>
       )}

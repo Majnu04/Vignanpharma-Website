@@ -1,4 +1,5 @@
 import SectionHeading from '../components/ui/SectionHeading';
+import Reveal from '../components/ui/Reveal';
 
 const courses = [
   {
@@ -47,38 +48,42 @@ export default function Courses() {
   return (
     <div className="bg-white py-16 sm:py-20">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="Courses"
-          title="Programs built for modern pharmacy careers"
-          description="Choose from undergraduate, postgraduate, and doctoral programs designed for clinical and research excellence."
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="Courses"
+            title="Programs built for modern pharmacy careers"
+            description="Choose from undergraduate, postgraduate, and doctoral programs designed for clinical and research excellence."
+          />
+        </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {courses.map((course) => (
-            <article
-              key={course.title}
-              className="rounded-2xl border border-slate-100 bg-slate-50 p-6"
-            >
-              <div className="flex flex-wrap items-center justify-between gap-4">
-                <div>
-                  <h3 className="text-xl font-semibold text-primary-900">{course.title}</h3>
-                  <p className="mt-1 text-sm text-slate-600">Duration: {course.duration}</p>
+        <Reveal delayMs={120}>
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            {courses.map((course) => (
+              <article
+                key={course.title}
+                className="rounded-2xl border border-slate-100 bg-slate-50 p-6"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-primary-900">{course.title}</h3>
+                    <p className="mt-1 text-sm text-slate-600">Duration: {course.duration}</p>
+                  </div>
+                  <span className="rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-700">
+                    {course.intake}
+                  </span>
                 </div>
-                <span className="rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-700">
-                  {course.intake}
-                </span>
-              </div>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {course.highlights.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent-600" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
+                <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                  {course.highlights.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent-600" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </div>
   );

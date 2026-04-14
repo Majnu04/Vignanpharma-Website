@@ -16,9 +16,9 @@ export default function Layout() {
       <Footer />
 
       {/* Floating Chatbot */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+      <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3 sm:bottom-6 sm:right-6">
         {isChatOpen && (
-          <div className="w-[320px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
+          <div className="w-[calc(100vw-2rem)] max-w-[340px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
             <div className="flex items-center justify-between bg-primary-700 px-4 py-3 text-white">
               <div className="text-sm font-semibold">VIPT Assistant</div>
               <button
