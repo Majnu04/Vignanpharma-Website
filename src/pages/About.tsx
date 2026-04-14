@@ -63,7 +63,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-slate-50 py-16 sm:py-20">
+      <section id="values" className="bg-slate-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Values"
@@ -84,7 +84,9 @@ export default function About() {
         </div>
       </section>
 
-      <FacultySection />
+      <section id="faculty">
+        <FacultySection />
+      </section>
     </div>
   );
 }
